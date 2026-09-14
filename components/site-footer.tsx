@@ -2,7 +2,7 @@ export function SiteFooter() {
   return (
     <footer id="about" className="border-t border-border">
       <div className="mx-auto max-w-6xl px-4 py-10 text-sm text-muted sm:px-6">
-        <p className="max-w-2xl leading-relaxed">
+        <p className="leading-relaxed">
           The eight-scale framework, country dataset and color palette on this
           page come from{" "}
           <strong className="font-medium text-foreground">

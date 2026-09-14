@@ -23,10 +23,10 @@ export function Hero() {
           </span>
         </div>
 
-        <h1 className="mt-6 max-w-3xl font-serif text-4xl font-semibold leading-[1.1] tracking-tight sm:text-6xl">
+        <h1 className="mt-6 font-serif text-4xl font-semibold leading-[1.1] tracking-tight sm:text-6xl">
           Every culture negotiates, decides and disagrees differently.
         </h1>
-        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
+        <p className="mt-5 text-lg leading-relaxed text-muted">
           Based on Erin Meyer&rsquo;s research for{" "}
           <em className="font-serif not-italic text-foreground">
             The Culture Map
