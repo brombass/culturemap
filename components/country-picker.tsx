@@ -1,5 +1,3 @@
-"use client";
-
 import { useMemo, useRef, useState } from "react";
 import { Shuffle, X, Search, Trash2 } from "lucide-react";
 import { countries, type Country } from "@/lib/data";

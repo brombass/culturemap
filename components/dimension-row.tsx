@@ -1,5 +1,3 @@
-"use client";
-
 import { useMemo, useState } from "react";
 import { Info } from "lucide-react";
 import type { Country, Dimension } from "@/lib/data";

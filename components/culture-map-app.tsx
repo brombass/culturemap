@@ -1,5 +1,3 @@
-"use client";
-
 import { useMemo } from "react";
 import { countriesById } from "@/lib/data";
 import { useCountrySelection } from "@/lib/use-selection";

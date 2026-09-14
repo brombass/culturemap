@@ -18,7 +18,7 @@ export function SiteFooter() {
           for reference.
         </p>
         <p className="mt-4">
-          Built with Next.js &amp; Tailwind CSS. No accounts, tracking or
+          Built with React, Vite &amp; Tailwind CSS. No accounts, tracking or
           server required &mdash; everything runs in your browser.
         </p>
       </div>

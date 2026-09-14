@@ -1,5 +1,3 @@
-"use client";
-
 import { useCallback, useEffect, useRef, useState } from "react";
 import { countries, defaultCountries } from "./data";
 import { MAX_SELECTABLE } from "./color";

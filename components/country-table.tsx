@@ -1,5 +1,3 @@
-"use client";
-
 import { useMemo, useState } from "react";
 import { ArrowDown, ArrowUp, ArrowUpDown, Plus, Search, X } from "lucide-react";
 import { countries, dimensions, type DimensionCode } from "@/lib/data";

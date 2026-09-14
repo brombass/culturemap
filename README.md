@@ -13,8 +13,8 @@ typed dataset and [`legacy/`](./legacy) for the original static site it came
 from.
 
 The rebuild is a fully client-side single-page app (no backend, no
-accounts): built with **Next.js (App Router)**, **TypeScript** and
-**Tailwind CSS**, exported as static files so it can be hosted anywhere.
+accounts): built with **React**, **TypeScript**, **Vite** and **Tailwind
+CSS**, compiled into static files so it can be hosted anywhere.
 
 ## Features
 
@@ -35,21 +35,26 @@ accounts): built with **Next.js (App Router)**, **TypeScript** and
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000
+npm run dev      # http://localhost:5173
 ```
 
 ## Production build
 
 ```bash
-npm run build    # outputs a static site to ./out
-npx serve out    # or any static file host
+npm run build    # outputs a static site to ./dist
+npx serve dist   # or any static file host
 ```
+
+The build is self-contained and can also be opened directly as
+`dist/index.html`; serving it over HTTP is still recommended for development.
 
 ## Project layout
 
 ```
-app/                 Next.js App Router entry (layout, page, global CSS)
-components/          UI components (client-side)
+index.html           Static HTML shell
+src/main.tsx          React entry point
+src/index.css         Tailwind and global styles
+components/          React UI components
 lib/data/             Extracted & typed dataset (countries, dimensions, palette)
 lib/                 Selection state, color, layout and scoring helpers
 legacy/              The original static site + bundle.min.js it was derived from
