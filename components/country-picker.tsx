@@ -93,9 +93,13 @@ export function CountryPicker({
           const idx = selected.indexOf(c.id);
           const color = colorForIndex(idx);
           return (
-            <span
+            <button
               key={c.id}
-              className="animate-fade-in-up inline-flex items-center gap-2 rounded-full border border-border bg-background-alt py-1 pl-1.5 pr-2 text-sm"
+              type="button"
+              onClick={() => remove(c.id)}
+              aria-label={`Remove ${c.name} from comparison`}
+              title={`Remove ${c.name}`}
+              className="animate-fade-in-up inline-flex items-center gap-2 rounded-full border border-border bg-background-alt py-1 pl-1.5 pr-2 text-sm transition-colors hover:border-accent hover:bg-card"
             >
               <span
                 className="h-2.5 w-2.5 rounded-full"
@@ -103,15 +107,11 @@ export function CountryPicker({
                 aria-hidden
               />
               {c.name}
-              <button
-                type="button"
-                onClick={() => remove(c.id)}
-                aria-label={`Remove ${c.name}`}
-                className="rounded-full p-0.5 text-muted transition-colors hover:bg-border hover:text-foreground"
-              >
-                <X className="h-3.5 w-3.5" />
-              </button>
-            </span>
+              <X
+                className="h-3.5 w-3.5 text-muted transition-colors hover:text-foreground"
+                aria-hidden
+              />
+            </button>
           );
         })}
       </div>
