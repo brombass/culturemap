@@ -8,7 +8,7 @@ export function Hero() {
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_15%_20%,color-mix(in_oklab,var(--accent)_18%,transparent),transparent_55%),radial-gradient(circle_at_85%_0%,color-mix(in_oklab,var(--accent-strong)_14%,transparent),transparent_45%)]"
       />
-      <div className="mx-auto max-w-6xl px-4 pb-14 pt-14 sm:px-6 sm:pt-20">
+      <div className="mx-auto max-w-6xl px-4 pb-14 pt-14 sm:px-6 sm:pt-10">
         <div className="flex flex-wrap items-center gap-1.5">
           {dimensions.map((d, i) => (
             <span
