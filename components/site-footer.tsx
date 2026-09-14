@@ -10,7 +10,8 @@ export function SiteFooter() {
           </strong>{" "}
           by Erin Meyer. This page is an independent, unofficial rebuild of
           the original static tool with a modern interface; it isn&rsquo;t
-          affiliated with or endorsed by the author or INSEAD. The original
+          affiliated with or endorsed by the author or INSEAD. The comparison
+          data is based on information fetched from the public domain. The original
           static assets this rebuild was derived from are kept in{" "}
           <code className="rounded bg-background-alt px-1.5 py-0.5 font-mono text-xs">
             /legacy
