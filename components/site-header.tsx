@@ -1,14 +1,11 @@
+import { CultureMapIcon } from "./culture-map-icon";
+
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         <a href="#top" className="flex items-center gap-2">
-          <span
-            aria-hidden
-            className="flex h-7 w-7 items-center justify-center rounded-full bg-accent-strong text-[13px] font-semibold text-background"
-          >
-            CM
-          </span>
+          <CultureMapIcon className="h-9 w-9 text-accent-strong" />
           <span className="font-serif text-[15px] font-semibold tracking-tight">
             The Culture Map
           </span>
