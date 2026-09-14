@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- html lang="en" manifest="cache.manifest" -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--- for above see http://stackoverflow.com/questions/11182240/how-do-i-fix-twitter-bootstrap-on-ie --->
+  <title>The Country Mapping</title>
+  <!--- see also https://github.com/scottjehl/iOS-Orientationchange-Fix/blob/master/ios-orientationchange-fix.js --->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="The Country Mapping">
+  <meta name="author" content="Erin Meyer">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="assets/stylesheets/all.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/all_print.min.css" media="print">
+  <!--[if lt IE 9]>
+    <style>
+      .unsupported-version-of-ie {
+        display: block !important;
+      }
+    </style>
+  <![endif]-->
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <!-- Apple iPad Icons Sheets -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon_57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon_72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon_114x114.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon_144x144.png" />
+
+  <!-- Javascripts -->
+  <script>
+    // Force Reload if Application Cache Changed
+    // see http://www.sitepoint.com/html5-application-cache/
+    function onApplicationCacheUpdateReady() {
+      if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+        window.applicationCache.swapCache();
+        location.reload();
+      }
+    }
+
+    window.applicationCache.addEventListener(
+      'updateready',
+      onApplicationCacheUpdateReady);
+  </script>
+  <script src='assets/javascripts/bundle.min.js'></script>
+
+
+</head>
+
+<body>
+
+  <!-- Message for Unsupported Version of Internet Explorer -->
+  <div class="unsupported-version-of-ie" style="display:none; margin: 36px 15px;">
+    <h1 style="margin: 18px 0; text-align: center;">Unsupported Browser</h1>
+    <div style="font-size:16px;">
+      Please use a recent version of your browser. If you are using Internet Explorer, please use Internet Explorer version 9 or higher.
+    </div>
+
+</body>
+
+</html>
+
