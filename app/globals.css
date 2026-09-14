@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf8f4;
+  --background-alt: #f1ede5;
+  --foreground: #1b1d1f;
+  --muted: #6b6f76;
+  --card: #ffffff;
+  --border: #e4ded2;
+  --accent: #5f7a7d;
+  --accent-strong: #354648;
+  --ring: #5f7a7d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-source-serif);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #14171a;
+    --background-alt: #1b1f23;
+    --foreground: #eef0ee;
+    --muted: #9aa0a6;
+    --card: #1c2023;
+    --border: #2b3034;
+    --accent: #8fb3b6;
+    --accent-strong: #c3dade;
+    --ring: #8fb3b6;
+  }
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--card);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.35s ease both;
+}
+
+.richtext a {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.richtext a:hover {
+  color: var(--accent);
+}
