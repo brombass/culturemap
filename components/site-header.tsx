@@ -34,7 +34,7 @@ export function SiteHeader() {
           </a>
           <a
             className="rounded-full border border-border px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-accent hover:text-accent-strong"
-            href="https://en.wikipedia.org/wiki/The_Culture_Map_(book)"
+            href="https://erinmeyer.com/books/the-culture-map/"
             target="_blank"
             rel="noreferrer"
           >
