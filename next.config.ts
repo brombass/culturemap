@@ -5,6 +5,9 @@ import type { NextConfig } from "next";
 // original static site in legacy/.
 const nextConfig: NextConfig = {
   output: "export",
+  // Keep the exported folder portable: it works from a static host and when
+  // someone opens out/index.html directly from disk.
+  assetPrefix: "./",
   images: {
     unoptimized: true,
   },
