@@ -6,6 +6,9 @@ export default defineConfig({
   // Relative assets keep the built SPA portable on static hosts and when
   // opened from a local folder.
   base: "./",
+  server: {
+    allowedHosts: ["hex"],
+  },
   plugins: [react()],
   resolve: {
     alias: {
